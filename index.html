@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1A1A2E">
+<title>The TENS Movement Lab Salem | Best Gym &amp; Functional Fitness Center in Salem, Tamil Nadu</title>
+<meta name="description" content="Join The TENS - Movement Lab at Windsor Castle Hotel, Rajaji Road, Salem. Salem's top-rated gym offering functional training, personal coaching, strength &amp; conditioning, and mobility sessions. Rated 5/5. Call 098944 46169 to book your session today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#0f172a;background:#fff;-webkit-font-smoothing:antialiased}
+.wa-fab{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.5);text-decoration:none;transition:transform .2s,box-shadow .2s}.wa-fab:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,.6)}
+[data-r]{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;}
+[data-r].r-in{opacity:1;transform:none;}
+[data-r][data-d="1"]{transition-delay:.1s;}[data-r][data-d="2"]{transition-delay:.22s;}
+[data-r][data-d="3"]{transition-delay:.34s;}[data-r][data-d="4"]{transition-delay:.46s;}
+[data-r][data-d="5"]{transition-delay:.58s;}[data-r][data-d="6"]{transition-delay:.70s;}
+.nav-s{box-shadow:0 2px 24px rgba(0,0,0,.12)!important;}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,0,0,.06);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:62px;transition:box-shadow .3s}
+.nav-brand{font-weight:700;font-size:.98rem;color:#1A1A2E;max-width:55%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-cta{background:#1A1A2E;color:#fff;padding:9px 22px;border-radius:50px;text-decoration:none;font-size:.83rem;font-weight:600;white-space:nowrap;transition:opacity .2s}
+.nav-cta:hover{opacity:.88}
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero-bg{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=1600&q=85&fit=crop&auto=format');background-size:cover;background-position:center;will-change:transform}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(160deg,#1A1A2Ef0 0%,#1A1A2E99 45%,#16213Ecc 100%)}
+.hero-inner{position:relative;z-index:2;padding:100px 24px 64px;color:#fff;max-width:720px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:7px 18px;border-radius:50px;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:28px;backdrop-filter:blur(6px)}
+.hero h1{font-size:clamp(2rem,5.5vw,3.2rem);font-weight:800;line-height:1.12;margin-bottom:18px;letter-spacing:-.03em}
+.hero p{font-size:clamp(.97rem,2.2vw,1.12rem);opacity:.88;line-height:1.7;margin-bottom:36px;max-width:540px;margin-left:auto;margin-right:auto}
+.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:#E94560;color:#fff;padding:14px 34px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.93rem;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.btn-ghost{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.45);color:#fff;padding:13px 28px;border-radius:10px;text-decoration:none;font-weight:500;font-size:.93rem;transition:background .2s}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+/* STATS BAR */
+.stats-bar{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;box-shadow:0 8px 32px rgba(0,0,0,.1);position:relative;z-index:10}
+.stat{padding:24px 16px;text-align:center;border-right:1px solid #f1f5f9}
+.stat:last-child{border:none}
+.stat-n{font-size:1.8rem;font-weight:800;color:#1A1A2E;line-height:1;letter-spacing:-.02em}
+.stat-l{font-size:.7rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.08em;margin-top:5px;font-weight:500}
+/* SECTIONS */
+section{padding:72px 5vw}
+.container{max-width:980px;margin:0 auto}
+.sec-eyebrow{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#E94560;margin-bottom:10px}
+.sec-head h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:800;color:#0f172a;margin-bottom:10px;letter-spacing:-.02em}
+.sec-head p{color:#64748b;font-size:.95rem;max-width:520px;margin:0 auto}
+.sec-head{text-align:center;margin-bottom:48px}
+/* ABOUT */
+.about-wrap{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
+@media(min-width:768px){.about-wrap{grid-template-columns:1fr 1fr}}
+.about-img-wrap{position:relative;border-radius:20px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.12)}
+.about-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.about-badge{position:absolute;bottom:18px;left:18px;background:#1A1A2E;color:#fff;padding:10px 18px;border-radius:10px;font-size:.8rem;font-weight:600;display:flex;align-items:center;gap:7px}
+.about-text .sec-eyebrow{text-align:left}
+.about-text h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:#0f172a;margin-bottom:18px;text-align:left;letter-spacing:-.02em}
+.about-text p{color:#475569;line-height:1.82;margin-bottom:13px;font-size:.94rem}
+.hl-list{list-style:none;margin-top:20px;display:flex;flex-direction:column;gap:8px}
+.hl-list li{padding:10px 14px 10px 34px;position:relative;background:#f8fafc;border-radius:8px;color:#334155;font-size:.87rem;border-left:3px solid #E94560}
+.hl-list li:before{content:'✓';color:#E94560;position:absolute;left:11px;font-weight:700}
+/* SERVICES */
+.services-bg{background:#f8fafc}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:480px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc-card{background:#fff;border-radius:16px;padding:28px;border:1px solid #e2e8f0;transition:transform .22s,box-shadow .22s;position:relative;overflow:hidden}
+.svc-card:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(0,0,0,.09)}
+.svc-card:before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#1A1A2E,#E94560)}
+.svc-icon{width:44px;height:44px;background:#1A1A2E14;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.2rem}
+.svc-card h3{font-weight:700;color:#0f172a;margin-bottom:8px;font-size:.96rem}
+.svc-card p{color:#64748b;font-size:.86rem;line-height:1.65}
+/* PARALLAX STRIP */
+.ps-wrap{position:relative;min-height:340px;display:flex;align-items:center;overflow:hidden}
+#ps{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1600&q=85&fit=crop&auto=format');background-size:cover;background-position:center;will-change:transform}
+.ps-overlay{position:absolute;inset:0;background:#1A1A2Ee8}
+.ps-content{position:relative;z-index:2;text-align:center;color:#fff;padding:56px 24px;width:100%}
+.ps-content h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;margin-bottom:12px;letter-spacing:-.02em}
+.ps-content p{opacity:.84;max-width:500px;margin:0 auto 28px;font-size:.97rem;line-height:1.65}
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:600px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+.gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;transition:transform .3s,opacity .3s}
+.gallery-grid img:hover{transform:scale(1.03);opacity:.9}
+/* REVIEWS */
+.reviews-bg{background:#0f172a}
+.rv-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:40px}
+@media(min-width:640px){.rv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.rv-grid{grid-template-columns:repeat(3,1fr)}}
+.rv-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:24px;transition:background .2s}
+.rv-card:hover{background:rgba(255,255,255,.08)}
+.rv-stars{color:#fbbf24;font-size:1rem;margin-bottom:10px;letter-spacing:2px}
+.rv-text{color:rgba(255,255,255,.72);font-size:.9rem;line-height:1.75;font-style:italic;margin-bottom:14px}
+.rv-author{color:rgba(255,255,255,.38);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:768px){.contact-grid{grid-template-columns:1fr 1fr}}
+.contact-info{display:flex;flex-direction:column;gap:16px}
+.ci-row{display:flex;align-items:flex-start;gap:14px;padding:18px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0}
+.ci-icon{width:40px;height:40px;background:#1A1A2E14;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem}
+.ci-row h4{font-size:.82rem;color:#94a3b8;font-weight:500;margin-bottom:3px;text-transform:uppercase;letter-spacing:.06em}
+.ci-row a,.ci-row p{color:#1A1A2E;text-decoration:none;font-weight:600;font-size:.93rem}
+.contact-cta{background:linear-gradient(135deg,#1A1A2E 0%,#16213E 100%);border-radius:16px;padding:36px;color:#fff;display:flex;flex-direction:column;gap:14px;justify-content:center}
+.contact-cta h3{font-size:1.35rem;font-weight:800;letter-spacing:-.01em}
+.contact-cta p{opacity:.82;font-size:.9rem;line-height:1.6}
+.cta-btn-w{background:#fff;color:#1A1A2E;padding:14px 28px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.9rem;display:inline-block;text-align:center;transition:transform .15s}
+.cta-btn-w:hover{transform:translateY(-2px)}
+.cta-btn-outline{border:1.5px solid rgba(255,255,255,.45);color:#fff;padding:13px 28px;border-radius:10px;text-decoration:none;font-size:.9rem;display:inline-block;text-align:center;margin-top:6px}
+/* FOOTER */
+footer{background:#020617;color:#334155;padding:28px 5vw;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;font-size:.8rem}
+.footer-name{color:#64748b;font-weight:600;font-size:.88rem}
+</style>
+</head>
+<body>
+<nav>
+  <span class="nav-brand">The TENS - Movement Lab</span>
+  <a href="https://wa.me/919894446169?text=Hi!%20I%20found%20The%20TENS%20Movement%20Lab%20online%20and%20I'm%20interested%20in%20joining.%20Could%20you%20please%20share%20details%20about%20your%20training%20programs%2C%20membership%20plans%2C%20and%20batch%20timings%3F%20Thank%20you!" class="nav-cta">💬 WhatsApp</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg" id="hp"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">⭐ 5/5 &nbsp;·&nbsp; Google Verified</div>
+    <h1>Move Better. Live Stronger. Train Smarter.</h1>
+    <p>Salem's premier movement lab dedicated to transforming your fitness journey through science-backed training and expert guidance.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/919894446169?text=Hi!%20I%20found%20The%20TENS%20Movement%20Lab%20online%20and%20I'm%20interested%20in%20joining.%20Could%20you%20please%20share%20details%20about%20your%20training%20programs%2C%20membership%20plans%2C%20and%20batch%20timings%3F%20Thank%20you!" class="btn-primary">Book Your Free Trial Session Today</a>
+      <a href="tel:098944 46169" class="btn-ghost">📞 Call Now</a>
+    </div>
+  </div>
+</div>
+
+<div class="stats-bar" data-r>
+  <div class="stat"><div class="stat-n">5/5</div><div class="stat-l">Rating</div></div>
+  <div class="stat"><div class="stat-n">✓</div><div class="stat-l">Verified</div></div>
+  <div class="stat"><div class="stat-n">Local</div><div class="stat-l">Trusted</div></div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-img-wrap" data-r>
+        <img src="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=1600&q=85&fit=crop&auto=format" alt="The TENS - Movement Lab" class="about-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=1600&q=85&fit=crop&auto=format'">
+        <div class="about-badge">✓ Verified Business</div>
+      </div>
+      <div class="about-text" data-r data-d="2">
+        <p class="sec-eyebrow">About Us</p>
+        <h2>The TENS - Movement Lab</h2>
+        <p>The TENS - Movement Lab is Salem's most innovative fitness destination, nestled in the prestigious Royal Hall at Windsor Castle Hotel on Rajaji Road. We are not just a gym — we are a movement laboratory where every session is designed to optimize your body's performance, mobility, and strength. With a perfect 5-star rating, our commitment to excellence speaks through every workout we deliver.</p><p>Founded with a passion for functional fitness and holistic well-being, The TENS - Movement Lab brings cutting-edge training methodologies to Salem, Tamil Nadu. Our expert trainers guide you through personalized programs that focus on real movement patterns, injury prevention, and long-term health. Whether you are a beginner stepping into fitness for the first time or an athlete pushing your limits, our lab is equipped to elevate your potential six days a week.</p>
+        <ul class="hl-list"><li>Perfect 5-Star Rating — Trusted by Salem's fitness community for exceptional results and personalized care</li><li>Premium Location at Windsor Castle Hotel, Rajaji Road — Train in Salem's most prestigious fitness environment</li><li>Flexible Dual-Shift Hours (6–12 AM &amp; 4–8 PM) — Convenient morning and evening batches available six days a week</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-bg">
+  <div class="container">
+    <div class="sec-head" data-r>
+      <p class="sec-eyebrow">What We Offer</p>
+      <h2>Our Services</h2>
+      <p>Professional care tailored to your needs</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card" data-r data-d="1"><div class="svc-icon">🏥</div><h3>Functional Movement Training</h3><p>Science-based exercise programs focused on improving everyday movement patterns, core stability, and overall functional strength.</p></div><div class="svc-card" data-r data-d="2"><div class="svc-icon">💊</div><h3>Personal Training</h3><p>One-on-one sessions with certified trainers who design customized workout plans tailored to your specific fitness goals and body type.</p></div><div class="svc-card" data-r data-d="3"><div class="svc-icon">🩺</div><h3>Mobility &amp; Flexibility Sessions</h3><p>Targeted sessions to improve joint mobility, muscle flexibility, and posture to reduce pain and prevent injuries.</p></div><div class="svc-card" data-r data-d="1"><div class="svc-icon">📋</div><h3>Strength &amp; Conditioning</h3><p>Progressive resistance training programs designed to build lean muscle, improve endurance, and boost athletic performance.</p></div><div class="svc-card" data-r data-d="2"><div class="svc-icon">💡</div><h3>Group Fitness Classes</h3><p>Energetic and motivating group workout sessions that combine cardio, strength, and movement drills in a community-driven environment.</p></div><div class="svc-card" data-r data-d="3"><div class="svc-icon">⚕️</div><h3>Body Composition &amp; Wellness Coaching</h3><p>Comprehensive coaching that integrates fitness planning with lifestyle and nutritional guidance to help you achieve lasting body transformation.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="ps-wrap" data-r>
+  <div id="ps"></div>
+  <div class="ps-overlay"></div>
+  <div class="ps-content">
+    <h2>Ready to Get Started?</h2>
+    <p>Royal Hall, Windsor Castle Hotel, 14, Rajaji Rd, Peramanur, Salem, Tamil Nadu 636007, India</p>
+    <a href="https://wa.me/919894446169?text=Hi!%20I%20found%20The%20TENS%20Movement%20Lab%20online%20and%20I'm%20interested%20in%20joining.%20Could%20you%20please%20share%20details%20about%20your%20training%20programs%2C%20membership%20plans%2C%20and%20batch%20timings%3F%20Thank%20you!" style="background:#E94560;color:#fff;padding:14px 36px;border-radius:10px;text-decoration:none;font-weight:700;display:inline-block">💬 WhatsApp Us</a>
+  </div>
+</div>
+
+
+
+<section class="reviews-bg">
+  <div class="container">
+    <div class="sec-head" data-r>
+      <p class="sec-eyebrow" style="color:rgba(255,255,255,.45)">Reviews</p>
+      <h2 style="color:#fff">What Clients Say</h2>
+      <p style="color:rgba(255,255,255,.45)">Real feedback from real patients</p>
+    </div>
+    <div class="rv-grid">
+      <div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"The TENS Movement Lab has completely transformed the way I approach fitness. The trainers are incredibly knowledgeable and the environment is world-class. Best gym in Salem by far!"</p><div class="rv-author">— Arun K., Salem</div></div><div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"I came in with chronic back pain and left with a stronger, more mobile body. The functional training approach here is unlike anything else in Tamil Nadu. Highly recommended!"</p><div class="rv-author">— Priya S., Salem</div></div><div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"Exceptional coaching, premium facilities, and a motivating atmosphere. The TENS Lab is not just a gym — it is a complete movement experience. Worth every rupee!"</p><div class="rv-author">— Karthik R., Salem</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sec-head" data-r>
+      <p class="sec-eyebrow">Find Us</p>
+      <h2>Contact Us</h2>
+      <p>We're here to help. Reach out anytime.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info" data-r>
+        <div class="ci-row"><div class="ci-icon">📞</div><div><h4>Phone</h4><a href="tel:098944 46169">098944 46169</a></div></div>
+        <div class="ci-row"><div class="ci-icon">📍</div><div><h4>Address</h4><p>Royal Hall, Windsor Castle Hotel, 14, Rajaji Rd, Peramanur, Salem, Tamil Nadu 636007, India</p></div></div>
+        <div class="ci-row"><div class="ci-icon">🕐</div><div><h4>Hours</h4><p>Monday: 6:00 AM – 12:00 PM, 4:00 – 8:00 PM | Tuesday: 6:00 AM – 12:00 PM, 4:00 – 8:00 PM | Wednesday: 6:00 AM – 12:00 PM, 4:00 – 8:00 PM | Thursday: 6:00 AM – 12:00 PM, 4:00 – 8:00 PM | Friday: 6:00 AM – 12:00 PM, 4:00 – 8:00 PM | Saturday: 6:00 AM – 12:00 PM, 4:00 – 8:00 PM | Sunday: Closed</p></div></div>
+        <div class="ci-row"><div class="ci-icon">🗺️</div><div><h4>Directions</h4><a href="https://maps.google.com/?cid=17982176298767555017">View on Google Maps</a></div></div>
+      </div>
+      <div class="contact-cta" data-r data-d="2">
+        <h3>Book an Appointment</h3>
+        <p>Get in touch today. We respond within minutes on WhatsApp.</p>
+        <a href="https://wa.me/919894446169?text=Hi!%20I%20found%20The%20TENS%20Movement%20Lab%20online%20and%20I'm%20interested%20in%20joining.%20Could%20you%20please%20share%20details%20about%20your%20training%20programs%2C%20membership%20plans%2C%20and%20batch%20timings%3F%20Thank%20you!" class="cta-btn-w">💬 Chat on WhatsApp</a>
+        <a href="tel:098944 46169" class="cta-btn-outline">📞 098944 46169</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-name">The TENS - Movement Lab</span>
+  <span>© 2026 · Royal Hall, Windsor Castle Hotel, 14, Rajaji Rd, Peramanur, Salem, Tamil Nadu 636007, India</span>
+</footer>
+<a href="https://wa.me/919894446169?text=Hi!%20I%20found%20The%20TENS%20Movement%20Lab%20online%20and%20I'm%20interested%20in%20joining.%20Could%20you%20please%20share%20details%20about%20your%20training%20programs%2C%20membership%20plans%2C%20and%20batch%20timings%3F%20Thank%20you!" class="wa-fab" aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Scroll-reveal
+(function(){
+  var els=document.querySelectorAll('[data-r]');
+  if(!els.length)return;
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('r-in');obs.unobserve(e.target);}});
+  },{threshold:0.1,rootMargin:'0px 0px -48px 0px'});
+  els.forEach(function(el){obs.observe(el);});
+})();
+// Nav shadow
+(function(){
+  var nav=document.querySelector('nav');
+  if(!nav)return;
+  window.addEventListener('scroll',function(){nav.classList.toggle('nav-s',window.scrollY>50);},{passive:true});
+})();
+// Parallax
+if(window.innerWidth>768){
+  var hp=document.getElementById('hp'),ps=document.getElementById('ps');
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    if(hp)hp.style.transform='translateY('+y*.3+'px)';
+    if(ps){var r=ps.closest('.ps-wrap').getBoundingClientRect();ps.style.transform='translateY('+r.top*.2+'px)';}
+  },{passive:true});
+}
+</script>
+</body></html>
