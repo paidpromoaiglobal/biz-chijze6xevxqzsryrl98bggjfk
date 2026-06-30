@@ -144,7 +144,7 @@ footer{background:#020617;color:#334155;padding:28px 5vw;display:flex;flex-direc
   <div class="container">
     <div class="about-wrap">
       <div class="about-img-wrap" data-r>
-        <img src="https://lh3.googleusercontent.com/d/1RJdma4-Tw_mmUumYx2thqW4whjPEl8ih" alt="The TENS - Movement Lab" class="about-img" loading="lazy">
+        <img id="about-img" src="https://lh3.googleusercontent.com/d/1RJdma4-Tw_mmUumYx2thqW4whjPEl8ih" alt="The TENS - Movement Lab" class="about-img" loading="lazy">
         <div class="about-badge">✓ Verified Business</div>
       </div>
       <div class="about-text" data-r data-d="2">
@@ -189,7 +189,7 @@ footer{background:#020617;color:#334155;padding:28px 5vw;display:flex;flex-direc
       <h2>Inside The TENS Movement Lab</h2>
       <p>Premium facility built for serious movement training</p>
     </div>
-    <div class="gallery-grid">
+    <div id="gal" class="gallery-grid">
       <img src="https://lh3.googleusercontent.com/d/1sAkF6HnVzEQYhs_8MuUt9isqCcuRyEEb" alt="The TENS Movement Lab" loading="lazy">
       <img src="https://lh3.googleusercontent.com/d/1RJdma4-Tw_mmUumYx2thqW4whjPEl8ih" alt="The TENS Movement Lab" loading="lazy">
       <img src="https://lh3.googleusercontent.com/d/1YnT12tjBOnaLxc5TQNoTFA2Do7yprVwB" alt="The TENS Movement Lab" loading="lazy">
@@ -268,5 +268,20 @@ if(window.innerWidth>768){
     if(ps){var r=ps.closest('.ps-wrap').getBoundingClientRect();ps.style.transform='translateY('+r.top*.2+'px)';}
   },{passive:true});
 }
+// Google Maps Place photos
+(function(){
+  fetch('/api/photos').then(function(r){return r.ok?r.json():null;}).then(function(data){
+    if(!data||!data.photos||!data.photos.length)return;
+    var p=data.photos;
+    var hp=document.getElementById('hp');
+    if(hp&&p[0])hp.style.backgroundImage='url('+p[0]+')';
+    var ps=document.getElementById('ps');
+    if(ps&&p[1])ps.style.backgroundImage='url('+p[1]+')';
+    var ai=document.getElementById('about-img');
+    if(ai&&p[2])ai.src=p[2];
+    var gal=document.getElementById('gal');
+    if(gal){var imgs=gal.querySelectorAll('img');imgs.forEach(function(img,i){if(p[3+i])img.src=p[3+i];});}
+  }).catch(function(){});
+})();
 </script>
 </body></html>
